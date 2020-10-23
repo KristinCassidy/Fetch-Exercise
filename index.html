@@ -9,7 +9,7 @@
             function(response){
             response.json().then(function(response(json) {
               const destination = document.getElementById("destination");
-              destination.innerHTML = `<h3>Planet ${json[0].name}</h>`;
+              destination.innerHTML = `<h3>Planet ${json[0].name}</h3>`;
               });
             });
          });
