@@ -5,6 +5,7 @@
       <title>Fetch Planets</title>
       <script>
          window.addEventListener("load", function(){
+            json=[];
             fetch("https://handlers.education.launchcode.org/static/planets.json").then(function(response){
                response.json().then(function(json) {
                   const destination = document.getElementById("destination");
